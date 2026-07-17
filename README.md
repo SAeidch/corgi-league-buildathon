@@ -1,6 +1,31 @@
-# Build the Cup: Lovable × Corgi Buildathon 🐕⚽
+# Corgi League 🐕⚽ — Build the Cup: Lovable × Corgi Buildathon
 
 A 3-hour soccer-themed buildathon hosted by **Corgi** in partnership with **Lovable**, at Corgi Cafe SF — **July 16, 2026**.
+
+**🔗 Live app:** https://saeidch.github.io/corgi-league-buildathon/
+**📦 Repo:** https://github.com/SAeidch/corgi-league-buildathon
+
+> A fictional league of corgi footballers, explored through four lenses: a **similarity graph**, a **Poisson match predictor**, **collectible player cards**, and a **three-corgi commentary booth** that talks in different accents.
+
+## Run locally
+
+```bash
+npm install
+npm run dev      # http://localhost:5173
+npm run build    # type-check + production build to dist/
+npm run preview  # serve the production build
+```
+
+Stack: **React + TypeScript + Vite + Tailwind**, with `recharts` (radar/charts), `react-force-graph-2d` (network graph), and `framer-motion`. All data is seeded client-side (`src/data/`), analytics live in pure functions (`src/lib/similarity.ts`, `src/lib/prediction.ts`, `src/lib/personas.ts`).
+
+## Deploy to a lovable.app subdomain
+
+Lovable can't import an existing repo (one-way GitHub sync only), so to host on `lovable.app`:
+paste `LOVABLE_PROMPT.md` into a new Lovable project and upload the brand images. This repo
+doubles as the exact spec + a deployable reference build (currently live via GitHub Pages).
+
+---
+
 
 ---
 
