@@ -2,6 +2,7 @@ node_modules
 dist
 dist-ssr
 *.local
+*.tsbuildinfo
 
 # personal event photos (not part of the project)
 WhatsApp Image*
